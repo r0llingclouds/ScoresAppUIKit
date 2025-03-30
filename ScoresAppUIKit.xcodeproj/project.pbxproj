@@ -6,27 +6,67 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		85A0B5D82D85DC9B003B3BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A0B5CC2D85DC9B003B3BC1 /* Assets.xcassets */; };
+		85A0B5DA2D85DC9B003B3BC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A0B5CF2D85DC9B003B3BC1 /* LaunchScreen.storyboard */; };
+		85A0B5DB2D85DC9B003B3BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A0B5D12D85DC9B003B3BC1 /* Main.storyboard */; };
+		85A0B5E52D85E520003B3BC1 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A0B5E42D85E520003B3BC1 /* Score.swift */; };
+		85D04F132D901D9800819444 /* ScoreTableViewControllerD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D04F122D901D9800819444 /* ScoreTableViewControllerD.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		85A0B5B32D85DC20003B3BC1 /* ScoresAppUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoresAppUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A0B5CC2D85DC9B003B3BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85A0B5CD2D85DC9B003B3BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A0B5CE2D85DC9B003B3BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85A0B5D02D85DC9B003B3BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85A0B5E42D85E520003B3BC1 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		85D04F122D901D9800819444 /* ScoreTableViewControllerD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewControllerD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		85A0B5C52D85DC21003B3BC1 /* Exceptions for "ScoresAppUIKit" folder in "ScoresAppUIKit" target */ = {
+		85A0B5DD2D85E001003B3BC1 /* Exceptions for "System" folder in "ScoresAppUIKit" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				AppDelegate.swift,
+				SceneDelegate.swift,
 			);
 			target = 85A0B5B22D85DC20003B3BC1 /* ScoresAppUIKit */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		85A0B5B52D85DC20003B3BC1 /* ScoresAppUIKit */ = {
+		85A0B5DC2D85DFC2003B3BC1 /* System */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				85A0B5C52D85DC21003B3BC1 /* Exceptions for "ScoresAppUIKit" folder in "ScoresAppUIKit" target */,
+				85A0B5DD2D85E001003B3BC1 /* Exceptions for "System" folder in "ScoresAppUIKit" target */,
 			);
-			path = ScoresAppUIKit;
+			path = System;
+			sourceTree = "<group>";
+		};
+		85A0B5DE2D85E324003B3BC1 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		85A0B5E62D85E6E5003B3BC1 /* Repository */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		85D04F082D9017A100819444 /* Test */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Test;
+			sourceTree = "<group>";
+		};
+		85D04F0E2D90187F00819444 /* Logic */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		85D04F182D901DB700819444 /* Preview Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Preview Data";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +85,7 @@
 		85A0B5AA2D85DC20003B3BC1 = {
 			isa = PBXGroup;
 			children = (
-				85A0B5B52D85DC20003B3BC1 /* ScoresAppUIKit */,
+				85A0B5D42D85DC9B003B3BC1 /* ScoresAppUIKit */,
 				85A0B5B42D85DC20003B3BC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +96,33 @@
 				85A0B5B32D85DC20003B3BC1 /* ScoresAppUIKit.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		85A0B5D42D85DC9B003B3BC1 /* ScoresAppUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				85A0B5D12D85DC9B003B3BC1 /* Main.storyboard */,
+				85D04F122D901D9800819444 /* ScoreTableViewControllerD.swift */,
+				85D04F0E2D90187F00819444 /* Logic */,
+				85A0B5E62D85E6E5003B3BC1 /* Repository */,
+				85A0B5E12D85E37F003B3BC1 /* Model */,
+				85A0B5DE2D85E324003B3BC1 /* Resources */,
+				85A0B5DC2D85DFC2003B3BC1 /* System */,
+				85A0B5CD2D85DC9B003B3BC1 /* Info.plist */,
+				85A0B5CC2D85DC9B003B3BC1 /* Assets.xcassets */,
+				85A0B5CF2D85DC9B003B3BC1 /* LaunchScreen.storyboard */,
+				85D04F082D9017A100819444 /* Test */,
+				85D04F182D901DB700819444 /* Preview Data */,
+			);
+			path = ScoresAppUIKit;
+			sourceTree = "<group>";
+		};
+		85A0B5E12D85E37F003B3BC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85A0B5E42D85E520003B3BC1 /* Score.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,7 +141,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				85A0B5B52D85DC20003B3BC1 /* ScoresAppUIKit */,
+				85A0B5DE2D85E324003B3BC1 /* Resources */,
+				85A0B5E62D85E6E5003B3BC1 /* Repository */,
+				85D04F082D9017A100819444 /* Test */,
+				85D04F0E2D90187F00819444 /* Logic */,
+				85D04F182D901DB700819444 /* Preview Data */,
 			);
 			name = ScoresAppUIKit;
 			packageProductDependencies = (
@@ -122,6 +193,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A0B5D82D85DC9B003B3BC1 /* Assets.xcassets in Resources */,
+				85A0B5DA2D85DC9B003B3BC1 /* LaunchScreen.storyboard in Resources */,
+				85A0B5DB2D85DC9B003B3BC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +206,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D04F132D901D9800819444 /* ScoreTableViewControllerD.swift in Sources */,
+				85A0B5E52D85E520003B3BC1 /* Score.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85A0B5CF2D85DC9B003B3BC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A0B5CE2D85DC9B003B3BC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		85A0B5D12D85DC9B003B3BC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A0B5D02D85DC9B003B3BC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		85A0B5C72D85DC21003B3BC1 /* Debug */ = {
@@ -145,14 +240,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "ScoresAppUIKit/Preview\\ Data";
 				DEVELOPMENT_TEAM = Z8M53TCQ6Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScoresAppUIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Scores;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,8 +258,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tirsolopez.ScoresAppUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -173,14 +275,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "ScoresAppUIKit/Preview\\ Data";
 				DEVELOPMENT_TEAM = Z8M53TCQ6Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScoresAppUIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Scores;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,8 +293,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tirsolopez.ScoresAppUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

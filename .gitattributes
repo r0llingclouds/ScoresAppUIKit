@@ -1,0 +1,26 @@
+# Normalize all text files with LF endings
+* text=auto
+
+# Xcode project files – merge changes automatically
+*.pbxproj      text merge=union
+*.xcodeproj/project.pbxproj text merge=union
+
+# Treat storyboards and XIBs as XML text
+*.storyboard   text
+*.xib          text
+
+# Property list files should be text
+*.plist        text
+
+# Asset catalogs and images are binary
+*.xcassets     binary
+*.xcassets/**  binary
+*.png          binary
+*.jpg          binary
+*.jpeg         binary
+*.gif          binary
+
+# Frameworks, archives, and other binaries
+*.framework    binary
+*.zip          binary
+*.rar          binary
