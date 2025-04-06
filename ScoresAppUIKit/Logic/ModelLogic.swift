@@ -13,7 +13,11 @@ final class ModelLogic {
     static let shared = ModelLogic()
     
     private let repository: DataRepository
-    private var scores: [Score]
+    private var scores: [Score] {
+        didSet {
+            try? repository.saveScores(scores)
+        }
+    }
     
     var numberOfSections: Int {
         Set(scores.map(\.composer)).count
@@ -46,6 +50,12 @@ final class ModelLogic {
         scoresByComposer[section].first?.composer
     }
     
+    func deleteScoreAt(_ indexPath: IndexPath) {
+        let score = scoresByComposer[indexPath.section][indexPath.row]
+        scores.removeAll { $0.id == score.id }
+        print("Deleted score: \(score.title)")
+        print("Scores left: \(scores.count)")
+    }
     
 }
 

@@ -13,6 +13,14 @@ struct RepositoryTest: DataRepository {
         Bundle.main.url(forResource: "scoresdatatest",
                         withExtension: "json")!
     }
+    
+    var urlDoc: URL {
+        URL.documentsDirectory.appending(path: "scoresdatatest").appendingPathExtension("json")
+    }
+    
+    func saveScores(_ scores: [Score]) throws {}
+        
+    
 }
 
 extension ScoreTableViewControllerD {
